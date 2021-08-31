@@ -1,14 +1,15 @@
-echo metti la password e in teoria non ti verrà più chiesta 
-sudo -i
 echo inizia lo script
+cd
 echo aggiorno i repo
 sudo  apt update -y
 echo  faccio l upgrade dei i repo
 sudo apt upgrade
+echo lancio autoremove
+sudo apt autoremove -y
 echo installo micro e rimuvo nano
 sudo apt purge nano -y && sudo apt install micro -y
 echo installo java
-sudo apt install install default-jre default-jdk  -y
+sudo apt install install default-jre && sudo apt install default-jdk  -y
 echo installo vscode
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
