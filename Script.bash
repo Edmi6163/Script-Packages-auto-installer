@@ -43,6 +43,8 @@ echo installo sublime text
 flatpak install flathub com.sublimetext.three -y
 echo installo xournalpp
 flatpak install flathub com.github.xournalpp.xournalpp -y
+echo install qbittorent
+flatpak install flathub org.qbittorrent.qBittorrent
 echo aggiorno i repo
 sudo apt update -y
 echo faccio l upgrade dei repo
