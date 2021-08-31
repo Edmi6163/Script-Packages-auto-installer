@@ -43,6 +43,8 @@ echo installo xournalpp
 flatpak install flathub com.github.xournalpp.xournalpp -y
 echo install qbittorent
 flatpak install flathub org.qbittorrent.qBittorrent
+echo installo android-studio
+flatpak install flathub com.google.AndroidStudio
 echo aggiorno i repo
 sudo apt update -y
 echo faccio l upgrade dei repo
