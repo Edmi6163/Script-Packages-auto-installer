@@ -20,8 +20,6 @@ sudo apt update
 sudo apt install code
 echo installo gnome-boxes
 sudo apt install gnome-boxes -y
-echo installo qbittorent
-sudo apt install qbittorent -y
 echo installo vlc
 sudo apt install vlc -y
 echo installo chrome
