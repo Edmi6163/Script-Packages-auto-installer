@@ -2,7 +2,7 @@ echo inizia lo script
 cd
 echo aggiorno i repo
 sudo  apt update -y
-echo  faccio l upgrade dei i repo
+echo  faccio l upgrade dei repo
 sudo apt upgrade
 echo lancio autoremove
 sudo apt autoremove -y
