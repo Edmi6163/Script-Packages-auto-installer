@@ -12,6 +12,9 @@ echo installo java
 sudo apt install default-jre && sudo apt install default-jdk  -y
 echo installo R e cose varie
 sudo apt install r-base
+sudo apt install gdebi-core 
+wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1717-amd64.deb
+sudo gdebi rstudio-1.4.1717-amd64.deb
 echo installo vscode
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
