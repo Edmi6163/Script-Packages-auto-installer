@@ -10,6 +10,8 @@ echo installo micro e rimuvo nano
 sudo apt purge nano -y && sudo apt install micro -y
 echo installo java
 sudo apt install default-jre && sudo apt install default-jdk  -y
+echo installo R e cose varie
+sudo apt install r-base
 echo installo vscode
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
