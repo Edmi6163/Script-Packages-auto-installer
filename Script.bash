@@ -25,6 +25,11 @@ sudo apt update
 sudo apt install code
 echo installo gnome-boxes
 sudo apt install gnome-boxes -y
+echo installo sublime-text
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt-get update
+sudo apt-get install sublime-text
 echo installo vlc
 sudo apt install vlc -y
 echo installo flatpak
@@ -39,8 +44,6 @@ echo installo obisidian
 flatpak install flathub md.obsidian.Obsidian -y
 echo installo okular
 flatpak install flathub org.kde.okular -y
-echo installo sublime text
-flatpak install flathub com.sublimetext.three -y
 echo installo xournalpp
 flatpak install flathub com.github.xournalpp.xournalpp -y
 echo install qbittorent
