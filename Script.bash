@@ -32,14 +32,17 @@ sudo apt-get update
 sudo apt-get install sublime-text
 echo installo vlc
 sudo apt install vlc -y
+echo installo discord
+mkdir .Discord
+cd .Discord
+wget -O discord-0.0.1.deb https://discordapp.com/api/download?platform=linux&format=deb
+sudo dpkg -i discord-0.0.1.deb
 echo installo flatpak
 sudo apt install flatpak -y
 echo installo arduino ide
 flatpak install flathub cc.arduino.arduinoide -y
 echo installo bitwarden
 flatpak install flathub com.bitwarden.desktop -y
-echo installo discord
-flatpak install flathub com.discordapp.Discord -y
 echo installo obisidian 
 flatpak install flathub md.obsidian.Obsidian -y
 echo installo okular
