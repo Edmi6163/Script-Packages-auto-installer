@@ -54,6 +54,19 @@ echo installo xournalpp
 flatpak install flathub com.github.xournalpp.xournalpp -y
 echo install qbittorent
 flatpak install flathub org.qbittorrent.qBittorrent -y
+echo installo git
+sudo apt install git 
+echo installo le estensioni di vim
+mkdir -p ~/.vim/pack/vendor/start
+cd ~/.vim/pack/vendor/start
+#nerdTree
+git clone --depth 1 \https://github.com/preservim/nerdtree.git \
+	~/.vim/pack/vendor/start/nerdtree
+#vim-airline
+git clone https://github.com/vim-airline/vim-airline
+#syntastic
+git clone https://github.com/vim-syntastic/syntastic
+cd
 echo aggiorno i repo
 sudo apt update -y
 echo faccio l upgrade dei repo
