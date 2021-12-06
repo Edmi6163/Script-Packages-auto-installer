@@ -25,6 +25,8 @@ sudo apt update -y
 sudo apt install code -y
 echo installo gnome-boxes -y
 sudo apt install gnome-boxes -y
+echo installo okular
+sudo apt install okular -y
 echo installo sublime-text
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -48,8 +50,6 @@ echo installo bitwarden
 flatpak install flathub com.bitwarden.desktop -y
 echo installo obisidian 
 flatpak install flathub md.obsidian.Obsidian -y
-echo installo okular
-flatpak install flathub org.kde.okular -y
 echo installo xournalpp
 flatpak install flathub com.github.xournalpp.xournalpp -y
 echo install qbittorent
