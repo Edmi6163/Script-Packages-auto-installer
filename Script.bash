@@ -56,16 +56,16 @@ echo install qbittorent
 flatpak install flathub org.qbittorrent.qBittorrent -y
 echo installo git
 sudo apt install git 
-echo installo le estensioni di vim
-mkdir -p ~/.vim/pack/vendor/start
-cd ~/.vim/pack/vendor/start
-#nerdTree
-git clone --depth 1 \https://github.com/preservim/nerdtree.git \
-	~/.vim/pack/vendor/start/nerdtree
-#vim-airline
-git clone https://github.com/vim-airline/vim-airline
-#syntastic
-git clone https://github.com/vim-syntastic/syntastic
+echo installo il plugin di vim
+ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+ touch .vimrc  ##vedi su repo tutto quello che devi mettere nel file  
+ ##estensioni di vim che uso
+#Plugin 'w0rp/ale'
+#Plugin 'raimondi/delimitmate'
+#Plugin 'scrooloose/syntastic'
+#Plugin 'scrooloose/nerdtree'
+#Plugin 'vim-airline/vim-airline'
 cd
 echo aggiorno i repo
 sudo apt update -y
