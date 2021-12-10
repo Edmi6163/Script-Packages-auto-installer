@@ -1,74 +1,63 @@
-echo inizia lo script
+echo script start
 cd
-echo aggiorno i repo
+echo updating repos
 sudo  apt update -y
-echo  faccio l upgrade dei repo
-sudo apt upgrade -y
-echo lancio autoremove
+echo  upgrading
+sudo apt upgrade
+echo autoremoving
 sudo apt autoremove -y
-echo installo micro e vim, rimuovo nano
-sudo apt purge nano -y && sudo apt install micro -y && sudo apt install vim -y
-echo installo java
-sudo apt install default-jre -y && sudo apt install default-jdk  -y
-echo installo R e cose varie
-sudo apt install r-base -y
-sudo apt install gdebi-core -y
-wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1717-amd64.deb
-sudo gdebi rstudio-1.4.1717-amd64.deb -y
-echo installo vscode
+echo installing git
+sudo apt install git 
+echo removing nano, installing micro and installing vim
+sudo apt purge nano -y && sudo apt install micro -y && 
+echo installing java
+sudo apt install default-jre && sudo apt install default-jdk  -y
+echo installing vscode
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
 rm -f packages.microsoft.gpg
-sudo apt install apt-transport-https -y
-sudo apt update -y
-sudo apt install code -y
-echo installo gnome-boxes -y
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code
+echo installing gnome-boxes
 sudo apt install gnome-boxes -y
-echo installo okular
-sudo apt install okular -y
-echo installo sublime-text
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update -y
-sudo apt-get install sublime-text -y
-echo installo chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt install ./google-chrome-stable_current_amd64.deb -y
-echo installo vlc
+echo installing vlc
 sudo apt install vlc -y
-echo installo discord
-mkdir .Discord
-cd .Discord
-wget -O discord-0.0.1.deb https://discordapp.com/api/download?platform=linux&format=deb
-sudo dpkg -i discord-0.0.1.deb -y
-echo installo flatpak
+echo installing chrome
+curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+echo installing flatpak
 sudo apt install flatpak -y
-echo installo arduino ide
+echo installing arduino ide
 flatpak install flathub cc.arduino.arduinoide -y
-echo installo bitwarden
+echo installing bitwarden
 flatpak install flathub com.bitwarden.desktop -y
-echo installo obisidian 
+echo installing discord
+flatpak install flathub com.discordapp.Discord -y
+echo installing obisidian 
 flatpak install flathub md.obsidian.Obsidian -y
-echo installo xournalpp
+echo installo okular
+flatpak install flathub org.kde.okular -y
+echo installing sublime text
+flatpak install flathub com.sublimetext.three -y
+echo installing xournalpp
 flatpak install flathub com.github.xournalpp.xournalpp -y
-echo install qbittorent
-flatpak install flathub org.qbittorrent.qBittorrent -y
-echo installo git
-sudo apt install git 
-echo installo il plugin di vim
+echo installing qbittorent
+flatpak install flathub org.qbittorrent.qBittorrent
+echo installing vim plugin
  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
  touch .vimrc  ##vedi su repo tutto quello che devi mettere nel file  
- ##estensioni di vim che uso
+ ##vim extension that i use
 #Plugin 'w0rp/ale'
 #Plugin 'raimondi/delimitmate'
 #Plugin 'scrooloose/syntastic'
 #Plugin 'scrooloose/nerdtree'
 #Plugin 'vim-airline/vim-airline'
 cd
-echo aggiorno i repo
+echo updating repos
 sudo apt update -y
-echo faccio l upgrade dei repo
+echo upgrading repos
 sudo apt upgrade -y
-echo ho finito di installare tutto
+echo done!
