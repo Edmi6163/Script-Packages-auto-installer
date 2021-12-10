@@ -20,6 +20,8 @@ rm -f packages.microsoft.gpg
 sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code
+echo installing okular
+sudo apt install okular -y
 echo installing gnome-boxes
 sudo apt install gnome-boxes -y
 echo installing vlc
@@ -37,8 +39,6 @@ echo installing discord
 flatpak install flathub com.discordapp.Discord -y
 echo installing obisidian 
 flatpak install flathub md.obsidian.Obsidian -y
-echo installo okular
-flatpak install flathub org.kde.okular -y
 echo installing sublime text
 flatpak install flathub com.sublimetext.three -y
 echo installing xournalpp
