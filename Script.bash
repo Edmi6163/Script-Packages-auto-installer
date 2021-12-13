@@ -26,9 +26,6 @@ echo installing gnome-boxes
 sudo apt install gnome-boxes -y
 echo installing vlc
 sudo apt install vlc -y
-echo installing chrome
-curl https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
 echo installing flatpak
 sudo apt install flatpak -y
 echo installing arduino ide
