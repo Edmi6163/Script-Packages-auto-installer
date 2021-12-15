@@ -1,0 +1,22 @@
+sudo pacman -Syu
+#install jre and jdk
+sudo pacman -S jre-openjdk
+sudo pacman -S jdk-openjdk
+#installing python and pip
+sudo pacman -S python-pip
+#installing paru
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd paru
+makepkg -si
+#installing vscode
+paru -S visual-studio-code-bin
+#installing google chrome
+paru google-chrome
+#installing alacritty
+sudo pacman -S alacritty
+#removing firefox and installing firefox developer edition
+sudo pacamn -R firefox
+paru firefox-developer-edition
+
+echo done!
