@@ -18,5 +18,6 @@ sudo pacman -S alacritty
 #removing firefox and installing firefox developer edition
 sudo pacamn -R firefox
 paru firefox-developer-edition
-
+#installing kde tiling window manager
+paru kwin-bismuth
 echo done!
