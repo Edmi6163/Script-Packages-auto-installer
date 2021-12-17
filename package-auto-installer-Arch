@@ -1,4 +1,5 @@
 sudo pacman -Syu
+sudo pacman -S git
 #install jre and jdk
 sudo pacman -S jre-openjdk
 sudo pacman -S jdk-openjdk
