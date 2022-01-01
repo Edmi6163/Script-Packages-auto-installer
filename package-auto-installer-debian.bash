@@ -26,6 +26,11 @@ echo installing gnome-boxes
 sudo apt install gnome-boxes -y
 echo installing vlc
 sudo apt install vlc -y
+echo installing sublime-text
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt-get update
+sudo apt-get install sublime-text
 echo installing flatpak
 sudo apt install flatpak -y
 echo installing arduino ide
@@ -36,8 +41,6 @@ echo installing discord
 flatpak install flathub com.discordapp.Discord -y
 echo installing obisidian 
 flatpak install flathub md.obsidian.Obsidian -y
-echo installing sublime text
-flatpak install flathub com.sublimetext.three -y
 echo installing xournalpp
 flatpak install flathub com.github.xournalpp.xournalpp -y
 echo installing qbittorent
