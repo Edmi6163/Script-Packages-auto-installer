@@ -8,10 +8,12 @@ echo autoremoving
 sudo apt autoremove -y
 echo installing git
 sudo apt install git 
+echo installing tmux
+sudo apt install tmux -y
 echo removing nano, installing micro and installing vim
-sudo apt purge nano -y && sudo apt install micro -y && 
+sudo apt purge nano -y && sudo apt install micro -y && sudo apt install vim
 echo installing java
-sudo apt install default-jre && sudo apt install default-jdk  -y
+sudo apt install default-jre -y && sudo apt install default-jdk  -y
 echo installing vscode
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
