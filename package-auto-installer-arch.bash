@@ -5,14 +5,16 @@ sudo pacman -S jre-openjdk
 sudo pacman -S jdk-openjdk
 #installing python and pip
 sudo pacman -S python-pip
+#insalling tmux
+sudo pacman -S tmux
+#installing vlc
+sudo pacman -S vlc
 #installing paru
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
 cd
-#installing vscode
-paru -S visual-studio-code-bin
 #installing google chrome
 paru google-chrome
 #installing alacritty
