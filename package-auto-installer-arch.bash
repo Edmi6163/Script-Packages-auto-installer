@@ -27,9 +27,4 @@ sudo pacaman -S tmux
 #installing kde tiling window manager
 paru kwin-bismuth
 #installing codeart (change nvim look)
-git clone https://github.com/artart222/CodeArt
-cd CodeArt
-sudo pip3 install distro
-python3 install.py
-#lauch :PackerInstall && :PackerCompile && :TSInstall <language> &&  :LspInstall <language>
 echo done!
