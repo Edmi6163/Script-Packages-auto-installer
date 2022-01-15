@@ -5,8 +5,6 @@ sudo pacman -S jre-openjdk
 sudo pacman -S jdk-openjdk
 #installing python and pip
 sudo pacman -S python-pip
-#insalling tmux
-sudo pacman -S tmux
 #installing vlc
 sudo pacman -S vlc
 #installing paru
@@ -26,5 +24,11 @@ paru firefox-developer-edition
 sudo pacaman -S tmux
 #installing kde tiling window manager
 paru kwin-bismuth
-#installing codeart (change nvim look)
+#installing vim 
+sudo pacman -S vim
+#install fish shell
+sudo pacman -S fish
+#install fisher 
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+
 echo done!
