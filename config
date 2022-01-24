@@ -1,3 +1,4 @@
+#.config/i3/config
 exec --no-startup-id ~/set_once.sh
 # This file is a modified version based on default i3-config-wizard config
 # source is available here:
