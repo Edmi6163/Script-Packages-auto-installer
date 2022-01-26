@@ -24,6 +24,10 @@ paru firefox-developer-edition
 sudo pacaman -S tmux
 #installing kde tiling window manager
 paru kwin-bismuth
+#installing vscode
+paru visual-studio-code-bin
+#installing sublime text
+paru sublime-text-4
 #installing vim 
 sudo pacman -S vim
 #install fish shell
