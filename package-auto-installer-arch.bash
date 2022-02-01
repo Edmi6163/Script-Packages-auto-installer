@@ -34,5 +34,11 @@ sudo pacman -S vim
 sudo pacman -S fish
 #install fisher 
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+#installing tmux
+sudo pacman -s tmux
+#installing vscode
+paru visual-studio-code-bin
+#installig sublime text
+paru sublime-text-4
 
 echo done!
