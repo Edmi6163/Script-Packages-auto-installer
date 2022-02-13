@@ -28,8 +28,8 @@ paru kwin-bismuth
 paru visual-studio-code-bin
 #installing sublime text
 paru sublime-text-4
-#installing vim 
-sudo pacman -S vim
+#installing neovim 
+sudo pacman -S neovim
 #install fish shell
 sudo pacman -S fish
 #install fisher 
