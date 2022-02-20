@@ -5,6 +5,13 @@ sudo pacman -S jre-openjdk
 sudo pacman -S jdk-openjdk
 #installing python and pip
 sudo pacman -S python-pip
+#installing snap 
+git clone https://aur.archlinux.org/snapd.git
+cd snapd
+makepkg -si
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install snap
 #installing vlc
 sudo pacman -S vlc
 #installing paru
@@ -15,6 +22,10 @@ makepkg -si
 cd
 #installing google chrome
 paru google-chrome
+#install dart && flutter
+paru dart
+#install flutter
+sudo snap install flutter --classic
 #installing alacritty
 sudo pacman -S alacritty
 #removing firefox and installing firefox developer edition
