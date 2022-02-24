@@ -11,34 +11,34 @@ cd snapd
 makepkg -si
 sudo systemctl enable --now snapd.socket
 sudo ln -s /var/lib/snapd/snap /snap
-sudo snap install snap
+sudo snap install snapd
 #installing vlc
 sudo pacman -S vlc
 #installing paru
 sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/paru.git
-cd paru
+git clone https://aur.archlinux.org/yay.git
+cd yay
 makepkg -si
 cd
 #installing google chrome
-paru google-chrome
+yay google-chrome
 #install dart && flutter
-paru dart
+yay dart
 #install flutter
 sudo snap install flutter --classic
 #installing alacritty
 sudo pacman -S alacritty
 #removing firefox and installing firefox developer edition
 sudo pacamn -R firefox
-paru firefox-developer-edition
+yay firefox-developer-edition
 #installing tmux
 sudo pacaman -S tmux
 #installing kde tiling window manager
-paru kwin-bismuth
+yay kwin-bismuth
 #installing vscode
-paru visual-studio-code-bin
+yay visual-studio-code-bin
 #installing sublime text
-paru sublime-text-4
+yay sublime-text-4
 #installing neovim 
 sudo pacman -S neovim
 #install fish shell
@@ -47,9 +47,5 @@ sudo pacman -S fish
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 #installing tmux
 sudo pacman -s tmux
-#installing vscode
-paru visual-studio-code-bin
-#installig sublime text
-paru sublime-text-4
 
 echo done!
