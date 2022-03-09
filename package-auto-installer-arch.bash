@@ -44,7 +44,7 @@ sudo pacman -S fish
 #install fisher && plugin
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fisher install IlanCosman/tide@v5
-#installing tmux
-sudo pacman -s tmux && plugin
+#installing tmux && plugin
+sudo pacman -S tmux 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo done!
