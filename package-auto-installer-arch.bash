@@ -31,8 +31,6 @@ sudo pacman -S alacritty
 #removing firefox and installing firefox developer edition
 sudo pacamn -R firefox
 yay firefox-developer-edition
-#installing tmux
-sudo pacaman -S tmux
 #installing kde tiling window manager
 yay kwin-bismuth
 #installing vscode
@@ -43,9 +41,10 @@ yay sublime-text-4
 sudo pacman -S neovim
 #install fish shell
 sudo pacman -S fish
-#install fisher 
+#install fisher && plugin
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+fisher install IlanCosman/tide@v5
 #installing tmux
-sudo pacman -s tmux
-
+sudo pacman -s tmux && plugin
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 echo done!
