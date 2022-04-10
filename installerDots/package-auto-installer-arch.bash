@@ -31,8 +31,6 @@ sudo pacman -S alacritty
 #removing firefox and installing firefox developer edition
 sudo pacamn -R firefox
 yay firefox-developer-edition
-#installing kde tiling window manager
-yay kwin-bismuth
 #installing vscode
 yay visual-studio-code-bin
 #installing sublime text
@@ -47,4 +45,6 @@ fisher install IlanCosman/tide@v5
 #installing tmux && plugin
 sudo pacman -S tmux 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+#installing gitui 
+sudo pacman -S gitui
 echo done!
