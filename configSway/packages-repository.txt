@@ -5,10 +5,7 @@ swaybg
 waybar
 lxappearance
 polkit-gnome
-thunar
-thunar-archive-plugin
 file-roller
-thunar-volman
 grim
 slurp
 awesome-terminal-fonts
@@ -37,4 +34,3 @@ jq
 xed
 ttf-jetbrains-mono
 ttf-ubuntu-font-family
-xfce4-terminal
