@@ -12,7 +12,7 @@ awesome-terminal-fonts
 arc-x-icons-theme
 arc-gtk-theme-eos
 gtk-engine-murrine
-mako
+dunst
 wofi
 ly
 acpi
