@@ -14,7 +14,7 @@ sudo ln -s /var/lib/snapd/snap /snap
 sudo snap install snapd
 #installing vlc
 sudo pacman -S vlc
-#installing paru
+#installing yay 
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -46,5 +46,5 @@ fisher install IlanCosman/tide@v5
 sudo pacman -S tmux 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 #installing gitui 
-sudo pacman -S gitui
+sudo pacman -S lazygit
 echo done!
