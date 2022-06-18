@@ -26,8 +26,8 @@ yay google-chrome
 yay dart
 #install flutter
 sudo snap install flutter --classic
-#installing alacritty
-sudo pacman -S alacritty
+#installing kitty 
+yay kitty-bitmap
 #removing firefox and installing firefox developer edition
 sudo pacamn -R firefox
 yay firefox-developer-edition
@@ -45,6 +45,6 @@ fisher install IlanCosman/tide@v5
 #installing tmux && plugin
 sudo pacman -S tmux 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-#installing gitui 
+#installing lgit 
 sudo pacman -S lazygit
 echo done!
