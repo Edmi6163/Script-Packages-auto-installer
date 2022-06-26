@@ -68,16 +68,16 @@ if packer_status_ok then
         require("configs.icons").config()
       end,
     },
-
+    
     -- Bufferline
-    {
-      "akinsho/bufferline.nvim",
-      after = "nvim-web-devicons",
-      config = function()
-        require("configs.bufferline").config()
-      end,
-      disable = not config.enabled.bufferline,
-    },
+    --{
+     -- "akinsho/bufferline.nvim",
+   --   after = "nvim-web-devicons",
+     -- config = function()
+   --     require("configs.bufferline").config()
+   --   end,
+  --    disable = not config.enabled.bufferline,
+   -- },
 
     -- Better buffer closing
     {
@@ -360,7 +360,12 @@ if packer_status_ok then
 
     -- Get extra JSON schemas
     { "b0o/SchemaStore.nvim" },
-  }
+  -- tokyonight color scheme
+    {"ghifarit53/tokyonight-vim" },
+  -- dart plugin
+    {"dart-lang/dart-vim-plugin"},
+}
+
 
   packer.startup {
     function(use)
