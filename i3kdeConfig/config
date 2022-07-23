@@ -29,10 +29,10 @@ bindsym $mod+q kill
 #bindsym $mod+d exec dmen.sh
 
 # start rofi (dmenu mode)
-bindsym $mod+d exec $HOME/.config/rofi/scripts/appsmenu.sh
+#bindsym $mod+d exec $HOME/.config/rofi/scripts/appsmenu.sh
 
 # start rofi (window mode)
-bindsym $mod+Tab exec exec rofi -theme themes/appsmenu -show window
+#bindsym $mod+Tab exec exec rofi -theme themes/appsmenu -show window
 
 # open empty container
 bindsym $mod+Shift+Return exec i3-msg open
