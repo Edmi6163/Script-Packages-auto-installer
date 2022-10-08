@@ -46,5 +46,7 @@ fisher install IlanCosman/tide@v5
 sudo pacman -S tmux 
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 #installing lgit 
+#installing fira code nerd fonts
+yay nerd-fonts-fira-code
 sudo pacman -S lazygit
 echo done!
