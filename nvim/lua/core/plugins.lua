@@ -364,6 +364,8 @@ if packer_status_ok then
     {"ghifarit53/tokyonight-vim" },
   -- dart plugin
     {"dart-lang/dart-vim-plugin"},
+  --copilot 
+    {"github/copilot.vim"},
 }
 
 
