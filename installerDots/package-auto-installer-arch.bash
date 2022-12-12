@@ -21,7 +21,7 @@ cd yay
 makepkg -si
 cd
 #installing google chrome
-yay google-chrome
+#yay google-chrome
 #install dart && flutter
 yay dart
 #install flutter
@@ -43,9 +43,8 @@ sudo pacman -S fish
 curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fisher install IlanCosman/tide@v5
 #installing tmux && plugin
-sudo pacman -S tmux 
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-#installing lgit 
+#sudo pacman -S tmux 
+#git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 #installing fira code nerd fonts
 yay nerd-fonts-fira-code
 sudo pacman -S lazygit
