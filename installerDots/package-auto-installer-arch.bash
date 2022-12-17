@@ -23,11 +23,11 @@ cd
 #installing google chrome
 #yay google-chrome
 #install dart && flutter
-yay dart
+yay -S dart
 #install flutter
 sudo snap install flutter --classic
 #installing kitty 
-yay kitty-bitmap
+sudo pacman -S kitty
 #removing firefox and installing firefox developer edition
 sudo pacamn -R firefox
 yay firefox-developer-edition
@@ -40,12 +40,13 @@ sudo pacman -S neovim
 #install fish shell
 sudo pacman -S fish
 #install fisher && plugin
-curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+sudo pacman -S fisher
 fisher install IlanCosman/tide@v5
 #installing tmux && plugin
 #sudo pacman -S tmux 
 #git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 #installing fira code nerd fonts
-yay nerd-fonts-fira-code
+yay ttf-fira-code
 sudo pacman -S lazygit
+fish_vi_key_bindings
 echo done!
