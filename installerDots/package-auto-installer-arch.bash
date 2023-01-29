@@ -26,15 +26,15 @@ cd
 yay -S dart
 #install flutter
 sudo snap install flutter --classic
-#installing kitty 
-sudo pacman -S kitty
+#installing konsole 
+sudo pacman -S konsole
 #removing firefox and installing firefox developer edition
 sudo pacamn -R firefox
 yay firefox-developer-edition
 #installing vscode
 yay visual-studio-code-bin
-#installing sublime text
-yay sublime-text-4
+#installing kate
+sudo pacman -S kate
 #installing neovim 
 sudo pacman -S neovim
 #install fish shell
