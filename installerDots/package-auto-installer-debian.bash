@@ -11,7 +11,7 @@ sudo apt install git
 echo installing tmux
 sudo apt install tmux -y
 echo removing nano, installing micro and installing vim
-sudo apt purge nano -y && sudo apt install micro -y && sudo apt install vim
+sudo apt purge nano -y && sudo apt install vim
 echo installing java
 sudo apt install default-jre -y && sudo apt install default-jdk  -y
 echo installing okular
@@ -40,16 +40,6 @@ echo installing xournalpp
 flatpak install flathub com.github.xournalpp.xournalpp -y
 echo installing qbittorent
 flatpak install flathub org.qbittorrent.qBittorrent
-echo installing vim plugin
- git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
- touch .vimrc  ##vedi su repo tutto quello che devi mettere nel file
- ##vim extension that i use
-#Plugin 'w0rp/ale'
-#Plugin 'raimondi/delimitmate'
-#Plugin 'scrooloose/syntastic'
-#Plugin 'scrooloose/nerdtree'
-#Plugin 'vim-airline/vim-airline'
 cd
 echo updating repos
 sudo apt update -y
