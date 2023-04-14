@@ -13,4 +13,4 @@ set smartcase
 set showmatch
 set hlsearch
 set wildmenu
-
+set laststatus=2
