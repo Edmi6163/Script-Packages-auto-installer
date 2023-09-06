@@ -28,23 +28,19 @@ yay -S dart
 sudo snap install flutter --classic
 #installing konsole 
 sudo pacman -S konsole
-#removing firefox and installing firefox developer edition
-sudo pacamn -R firefox
-yay firefox-developer-edition
+#installing firefox   
+sudo pacamn -S firefox
 #installing vscode
 yay visual-studio-code-bin
 #installing kate
 sudo pacman -S kate
-#installing neovim 
-sudo pacman -S neovim
+#installing vim 
+sudo pacman -S vim
 #install fish shell
 sudo pacman -S fish
 #install fisher && plugin
 sudo pacman -S fisher
 fisher install IlanCosman/tide@v5
-#installing tmux && plugin
-#sudo pacman -S tmux 
-#git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 #installing fira code nerd fonts
 yay ttf-fira-code
 sudo pacman -S lazygit
